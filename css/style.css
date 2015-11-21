@@ -14,3 +14,7 @@ body
   position:absolute;
 }
 
+*, *:focus, *:active
+{
+	outline:none !important;
+}

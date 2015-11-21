@@ -236,7 +236,8 @@
 .main-content .singlepost
 {
   margin-bottom:30px;
-  position: absolute
+  position: absolute;
+  transition:ease-in-out all .2s;
 }
 
 .main-content .single-wrapper
