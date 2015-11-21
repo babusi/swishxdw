@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="fonts/line.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,10 +24,90 @@
     <div class="container-fluid">
     	<div class="row">
         	<div class="col-sm-3 col-md-2 sidebar">
-            
+            	<div class="sidebar-header">
+                	<span class="lnr lnr-menu"></span>
+                    <span class="brand">
+                    	<img src="img/dw-logo.svg" alt="sw-logo">
+                    </span>
+                    <span class="lnr lnr-cog"></span>
+                </div>
+                
+              <div class="sidebar-section trends">
+               	<h3><span class="lnr lnr-earth"></span> Trends</h3>
+                  <ul>
+                   	  <li>#UpTheBucs</li>
+                   	  <li>#Sanef</li>
+                   	  <li>#InternationalMensDay</li>
+                   	  <li>#HeeltoHeal</li>
+                   	  <li>Mint</li>
+                   	  <li>El Classico</li>
+                   	  <li>Mali</li>
+                   	  <li>Eddie Jones</li>
+                  </ul>
+                </div>
+                
+                <div class="sidebar-section online-users">
+                	<h3><span class="lnr lnr-users"></span> Online Readers</h3>
+                    <p>234</p>
+                </div>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            
+            	<nav class="navbar navbar-fixed-top">
+                	<div class="container-fluid">
+                    	<div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                          <a class="navbar-brand" href="#"><span class="lnr lnr-funnel"></span></a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                          <ul class="nav navbar-nav navbar-left">
+                            <li class="active"><a href="#">All</a></li>
+                            <li><a href="#">#DWAfricaNews</a></li>
+                            <li><a href="#">#DWNews</a></li>
+                            <li><a href="#">Influencer</a></li>
+                            <li><a href="#">Media</a></li>
+                            <li><a href="#">Content</a></li>
+                          </ul>
+                          <div class="navbar-right">
+                          	<div class="notification">
+                            	<span class="lnr lnr-bullhorn"></span>
+                                <div class="num">23</div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </nav>
+                
+                <div class="main-content">
+                <div id="pinBoot"></div>
+                    <!-- div class="col-sm-6 col-lg-4 singlepost content">
+                      <div class="single-wrapper">
+                        <h2>Paris 'may have provided a spark' for Mali attack.</h2>
+                        <p>On Friday morning gunmen attacked the Radisson Blu hotel in the Malian capital, Bamako, taking 170 guests and staff hostage. Malian special forces Astormed the hotel to free the captives.</p>
+                        <div class="post-footer">
+                          <div class="source"><span class="lnr lnr-book"></span> Content</div>
+                          <button class="btn"><span class="lnr lnr-exit-up"></span> Publish</button>
+                          </div>
+                      </div>
+                    </div -->
+                </div>
+                
+                <script type="text/html" id="entryTmpl">						  
+						  <article class="singlepost <!=source!>">
+							  <div class="single-wrapper">
+								<h2><!=title!></h2>
+								<p><!=content!></p>
+								<div class="post-footer">
+								  <div class="source"><span class="lnr lnr-book"></span> <!=source!></div>
+								  <button class="btn"><span class="lnr lnr-exit-up"></span> Publish</button>
+								  </div>
+							  </div>
+							</article>
+                  </script>
             </div>
         </div>
     </div>
@@ -35,5 +116,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.feeds.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.2/moment.min.js"></Script>
+    <script src="js/grid.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
