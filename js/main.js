@@ -1,10 +1,12 @@
 $( document ).ready(function() {
+
+		
 	
 		$('#pinBoot').feeds({
 			feeds : {
 				DWNews : 'https://script.google.com/macros/s/AKfycbxo-QBRj9dHjgOkiKKNMHWIQtXDC8SW01hngyRzIyKPWR-a8zw/exec?668110474882498560',
-				DWAfricaNews : 'https://script.google.com/macros/s/AKfycbxgtF8uWZbyS6IPAo5W5Ku2EEig4vlUY3AsCpQuCDvsaYzoyRU/exec?668112689433026560',
-				Influencers : 'https://script.google.com/macros/s/AKfycby05Cf6ZR8IgBRqiuuyZilwKBVSox9vV11och8hLaxTuEz8paY/exec?668121264662429697',
+				DWAfricaNews : 'https://script.google.com/macros/s/AKfycbxo-QBRj9dHjgOkiKKNMHWIQtXDC8SW01hngyRzIyKPWR-a8zw/exec?668112689433026560',
+				Influencers : 'https://script.google.com/macros/s/AKfycbxo-QBRj9dHjgOkiKKNMHWIQtXDC8SW01hngyRzIyKPWR-a8zw/exec?668318940398006272',
 				Content : 'http://rss.dw.com/rdf/rss-en-world',
 				
 			},
@@ -21,6 +23,9 @@ $( document ).ready(function() {
 					var postsnum = $('.singlepost').length
 				console.log($(".singlepost").length);
 				$('.num').html(postsnum);
+				$(".publish-btn").click(function(){
+        			//asfasf
+    			}); 
 						}
 					});
 		
@@ -47,16 +52,25 @@ $( document ).ready(function() {
                 if (!$(this).hasClass(category)) {
                     $(this).css('opacity','.3')
                 }
+
 	
 				});
+
+            
 			}
 	
 		});
+
+
+		
 			
 });
+
+
 
 $(document).ready(function() {
     $('.main-content').scroll(function() {
       $('.num').html('0');
     });
+
 });
