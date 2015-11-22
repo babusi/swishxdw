@@ -21,6 +21,12 @@
     <![endif]-->
   </head>
   <body>
+  
+  <div id="preload_wrapper">
+    <div class="preloader"><img src="img/dw-logo.svg">
+    <h3>Loading News...</h3></div>
+   </div>
+   
     <div class="container-fluid">
     	<div class="row">
         	<div class="col-sm-3 col-md-2 sidebar">
@@ -51,7 +57,7 @@
                     <p>234</p>
                 </div>
             </div>
-            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="col-xs-12 col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             	<nav class="navbar navbar-fixed-top">
                 	<div class="container-fluid">
                     	<div class="navbar-header">
@@ -61,16 +67,17 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                           </button>
-                          <a class="navbar-brand" href="#"><span class="lnr lnr-funnel"></span></a>
+                          <a class="navbar-brand brand-filter hidden-xs" href="#"><span class="lnr lnr-funnel"></span></a>
+                          <a class="navbar-brand brand-logo" href="#"><img src="img/dw-logo-blue.svg" alt="sw-logo"/></a>
                         </div>
                         <div id="navbar" class="navbar-collapse collapse">
                           <ul class="nav navbar-nav navbar-left">
-                            <li class="active" data-category="all"><a href="#">All</a></li>
+                            <li class="active" data-category="all"><a href="javascript:void(0)">All</a></li>
                             <!-- li data-category="DWAfricaNews"><a href="#">#DWAfricaNews</a></li -->
-                            <li data-category="DWNews"><a href="#">#DWNews</a></li>
-                            <li data-category="Influencers"><a href="#">Influencers</a></li>
+                            <li data-category="DWNews"><a href="javascript:void(0)">#DWNews</a></li>
+                            <li data-category="Influencers"><a href="javascript:void(0)">Influencers</a></li>
                             <!-- li data-category="Media"><a href="#">Media</a></li -->
-                            <li data-category="Content"><a href="#">Content</a></li>
+                            <li data-category="Content"><a href="javascript:void(0)">Content</a></li>
                           </ul>
                           <div class="navbar-right">
                           	<div class="notification">
@@ -103,8 +110,10 @@
 								<p><!=content!></p>
 								<p class="hidden"><!=link!></p>
 								<div class="post-footer">
-								  <div class="source"><span class="lnr lnr-book"></span> <!=source!></div>
-								  <button id="publish" class="btn publish-btn"><span class="lnr lnr-exit-up"></span> Publish</button>
+								  <div class="source"><span class="lnr lnr-book"></span> <span class="hidden-sm hidden-xs"><!=source!></span></div>
+								  <button class="btn publish-btn"><span class="lnr lnr-exit-up"></span> Publish
+								  </button>
+
 								  </div>
 							  </div>
 							</article>

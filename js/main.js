@@ -67,10 +67,7 @@ $( document ).ready(function() {
 });
 
 
-
-$(document).ready(function() {
-    $('.main-content').scroll(function() {
-      $('.num').html('0');
-    });
+$(window).load(function(){
+  $('#preload_wrapper').delay(1500).fadeOut('slow',function(){$(this).remove();});
 
 });
