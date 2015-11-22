@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-		
+		window.sr = new scrollReveal();
 	
 		$('#pinBoot').feeds({
 			feeds : {
@@ -12,7 +12,7 @@ $( document ).ready(function() {
 			},
 			xml: false,
 			
-			max: 5,
+			max: 15,
 			preprocess : function(feed) {
 				// Using moment.js to diplay dates as time ago
 				this.publishedDate = moment(this.publishedDate).add(6,'hours').fromNow();
@@ -23,9 +23,12 @@ $( document ).ready(function() {
 					var postsnum = $('.singlepost').length
 				console.log($(".singlepost").length);
 				$('.num').html(postsnum);
-				$(".publish-btn").click(function(){
-        			//asfasf
-    			}); 
+				
+				$('.publish-btn').click(function(){
+        		$(this).html('<span class=\"lnr lnr-thumbs-up\"></span> Published').addClass('published').removeClass('publish-btn');
+    			});
+				
+				
 						}
 					});
 		

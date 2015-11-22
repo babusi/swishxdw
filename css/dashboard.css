@@ -321,6 +321,16 @@
   border-radius: 2px;
   transition: all ease-in-out .2s;
 }
+.main-content .single-wrapper .post-footer button.published
+{
+  float: right;
+  margin-top: -32px;
+  border:1px solid #00ff00;
+  background: none;
+  font-size: 12px;
+  border-radius: 2px;
+  transition: all ease-in-out .2s;
+}
 
 .main-content .single-wrapper .post-footer button:hover
 {
